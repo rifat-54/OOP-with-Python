@@ -1,25 +1,49 @@
-class Student:
-    def __init__(self,name,id):
-        self.name=name
-        self.id=id
+# class Data:
+#     def __init__(self,x):
+#         self.x=x
 
 
-class Dummy:
-    def __init__(self):
-        self.val=0
-
-    def details(self,std):
-        # self.val=std
-        std.val=std
+#     def __add__(self, other):
+#         return self.x+other.x
 
 
-# ====================================================================================
-s1=Student("jak",23)
-d1=Dummy()
+# n1=Data(10)
+# n2=Data(20)
 
-d1.details(s1)
+# print(n1+n2)
 
-print(d1.val)
-print(d1.val.name)
-print(d1.val.id)
-print(d1.val.val)
+
+# class Data:
+#     def __init__(self,x):
+#         self.x=x
+
+
+#     def __gt__(self, other):
+#         if(self.x>other.x):
+#             return True
+#         else:
+#             return False
+
+
+# n1=Data(10)
+# n2=Data(20)
+
+# print(n1>n2)
+
+
+class Data:
+    def __init__(self,x):
+        self.x=x
+
+
+    def __lt__(self, other):
+        if(self.x<other.x):
+            return True
+        else:
+            return False
+
+
+n1=Data(10)
+n2=Data(20)
+
+print(n1<n2)

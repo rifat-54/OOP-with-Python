@@ -24,8 +24,8 @@ class Person:
 
     def pushVaccine(self,*parameter):
         VaccineName=parameter[0].name
-        if(self.age<25 and self.role=="General Citizen"):
-            print("Your age less than 25 you cant take vacine")
+        if(self.age<25 and self.role!="Student"):
+            print("Sorry ",self.name," Your age less than 25 you cant take vacine")
             return
 
         if(len(parameter)==1):
@@ -74,20 +74,28 @@ pl.showDetail()
 print("================================================================================")
 
 pl.pushVaccine(sin,"2nd Dose")
+
+print("================================================================================")
+
 pl.pushVaccine(astra,"2nd Dose")
+
+print("================================================================================")
 
 pl.showDetail()
 
 print("================================================================================")
 
 p2.pushVaccine(sin)
+print("================================================================================")
 
  
 p3.pushVaccine(modr)
+print("================================================================================")
 p3.showDetail()
 print("================================================================================")
 
 p3.pushVaccine(modr,"2nd Dose")
+print("================================================================================")
 p3.showDetail()
 
 
